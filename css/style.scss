@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+ $bgcolor: #f6f9f9;
+ $fontcolor:#2D3950;
+
+
+ %iconbg{
+ 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3cb2ff+50,5fc3ff+50 */
+background: rgb(60,178,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(60,178,255,1) 50%, rgba(95,195,255,1) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(60,178,255,1) 50%,rgba(95,195,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(60,178,255,1) 50%,rgba(95,195,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cb2ff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+ }
+
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+
+   }
+  
+
+   %transition{
+   	 transition: all 0.3s ease;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+   }
+   .navbar{
+   	
+   	background-color: #f6f9f9;
+   	padding: 20px 0;
+   	.navbar-nav{
+
+   		.nav-item{
+   			padding: 0 10px;
+
+   			.nav-link{
+   				    color: #2d3950;
+   				    font-size: 17px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    @extend %transition;
+                   
+                    &:hover{
+                    	color:#15A4FA;
+                    }
+   			}
+   		}
+   	}
+   }
+
+   .top-banner{
+   	background-image:url(../images/strict.jpg);
+   	background-repeat: no-repeat;
+   	background-size: cover;
+   	position: relative;
+   	.arrow{
+   		position: absolute;
+   		color: #fff;
+	    font-size: 20px;
+	    bottom: 77px;
+	    left: 50%;
+	    transform: translateX(-16px);
+	
+   	}
+
+   	.banner{
+
+   		.row {
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+
+   			.banner-contant{
+   				text-align: center;
+   				color: #fff;
+
+   				   
+
+
+   				h1{
+				    font-size: 80px;
+				    text-transform: uppercase;
+				    font-weight: 600;
+
+
+   				}
+   				span{
+   					height: 4px;
+   					width: 100%;
+   					display: block;
+   					background-color: #15A4FA;
+   					margin: 15px 0;
+
+   				}
+
+   				p{
+			    font-size: 18px;
+			    letter-spacing: 0.5px;
+			    margin-top: 30px;
+			    margin-bottom: 39px;
+
+   				}
+
+   				a{
+   					color: #fff;
+   					text-decoration: none;
+   					border: 1px solid  #15A4FA;
+   					padding: 13px 33px;
+   					text-transform: capitalize;
+
+                    &:hover{
+                    	background-color:#15A4FA;
+                    	 @extend %transition;
+                    }
+
+
+
+   				}
+   			}
+   		}
+   	}
+   }
+   .simple{
+   	padding: 50px 0;
+   	background-color:$bgcolor;
+   	.row{
+   		.col{
+
+   			.simple-contant{
+   				text-align: center;
+
+   				h2{
+   					color:$fontcolor;
+   					font-size: 40px;
+   					font-weight: 500;
+
+   				}
+   				p{
+   					padding: 0 111px;
+				    color: #333;
+				    font-size: 16px;
+				    font-weight: 500;
+				    margin-top: 20px;
+
+   				}
+   			}
+   		}
+   	}
+   }
+
+
+
+
+   .about-us{
+   	padding: 60px 0;
+   	.about{
+   		text-align: center;
+   		text-align: center;
+	    box-shadow: 7px 7px 9px #0000000d;
+	    padding: 30px 0;
+   		.about-icon{
+   			width: 80px;
+   			height: 80px;
+   			@extend %iconbg;
+   			margin: auto;
+   			i{
+   				color: #fff;
+			    font-size: 40px;
+			    text-align: center;
+			    line-height: 80px;
+			    text-shadow: 1px 1px 3px #000;
+
+   			}
+   			   }
+   			.about-contant{
+
+   				h3{
+   					margin: 20px 0;
+				    font-weight: 500;
+				    text-transform: capitalize;
+
+   				}
+   				p{
+   					color: #333;
+   				}
+
+   			}
+
+   		
+   	}
+   }
+   .gallary{
+   	padding: 70px 0;
+   	background-color: $bgcolor;
+   	.gallary-contant{
+   		text-align: center;
+   		h2{
+   			font-size: 45px;
+		    color: $fontcolor;
+		    font-weight: 500;
+   		}
+   		p{
+			    text-transform: capitalize;
+			    font-size: 18px;
+			    letter-spacing: 0.5px;
+			    color: #333;
+	}
+
+   	}
+   	.gallary-pictures{
+   		margin-top: 50px;
+
+   		.gallary-img{
+   			margin-bottom: 18px;
+   		}
+   	}
+   }
+   .contact-us{
+   	background-image: url(../images/contact.png);
+   	height: 100vh;
+   	background-size: cover;
+   	background-repeat: no-repeat;
+   	padding: 100px 0;
+   background-color: #1b2331f7;
+    background-blend-mode: color-dodge;
+   	.form-contant{
+   		text-align: center;
+   		color: #fff;
+   		padding-bottom: 30px;
+   		h4{
+   			font-size: 45px;
+
+   		}
+   		p{}
+
+   	}
+   	.form-part{
+
+   	.custom-form{
+   		    background: transparent;
+   		    margin-bottom: 20px;
+   		    color: #fff;
+            padding: 31px 15px;
+
+
+   	}
+          }
+          }
+
+
+
+/*footer sectin start*/
+footer{
+	padding:30px 0;
+	p{
+		    margin-bottom: 0;
+		    font-size: 16px;
+		    color: gray;
+	}
+	ul{
+		li{
+			a{
+				background-color: #15A4FA;
+				margin-left:10px;
+				color:#fff;
+				width:40px;
+				height:40px;
+				line-height: 40px;
+				display:block;
+				text-align:center;
+				transition:all .3s easa;
+				&:hover{
+					background:#fff;
+					border: 1px solid #15A4FA;
+				}
+			}
+		}
+	}
+}
+/*footer section end*/
+
